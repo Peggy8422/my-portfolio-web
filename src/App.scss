@@ -1,0 +1,33 @@
+//顏色變數
+$color_white: #FEF9EF;
+$color_yellow: #FFF383;
+$color_black: #202020;
+$color_grey: #333;
+
+// 常用mixin
+@mixin ab_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin size($w,$h) {
+  width: $w;
+  height: $h;
+}
+
+* {
+  font-family: 'Noto Sans', sans-serif, '微軟正黑體';
+  // border: solid 1px !important
+  position: relative;
+}
+html,
+body {
+  @include size(100%, 100%);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+  // height: 200vh
+  background-color: #FEF9EF;
+}

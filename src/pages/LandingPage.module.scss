@@ -1,0 +1,96 @@
+//顏色變數
+$color_white: #FEF9EF;
+$color_yellow: #FFF383;
+$color_black: #202020;
+$color_grey: #333;
+
+
+// 常用mixin
+@mixin ab_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin size($w,$h) {
+  width: $w;
+  height: $h;
+}
+
+main {
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.titleBox {
+  @include ab_center;
+  top: 40%;
+}
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+.subtitle {  // position: relative
+  font-weight: bold;
+  text-align: center;
+  text-align: right;
+}
+.nav {
+  @include ab_center;
+  top: 58%;
+  padding-left: 0px;
+}
+.navItem {
+  list-style: none;
+  border-left: solid 2px $color_black;
+  transition: 0.5s;
+  &:hover {
+    background-color: $color_yellow;
+  }
+}
+.navLink {
+  display: inline-block;
+  padding: 3px 15px;
+  color: $color_black;
+  font-weight: bold;
+  transition: 0.5s;
+  &:hover {
+    color: $color_grey;
+  }
+}
+.footer_chicken_egg {
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  svg {
+    width: 100%;
+  }
+}
+//----RWD：電腦版-----
+
+@media screen and (min-width:520px) {
+  .titleBox {
+    top: 47%;
+  }
+  .nav {
+    display: flex;
+    top: 60%;
+    padding-left: 0px;
+  }
+  .navItem {
+    margin-right: -3px;
+    border-left: none;
+  }
+  .iLine {
+    border-right: solid 2px $color_black;
+  }
+  .footer_chicken_egg {
+    width: 80%;
+  }
+};
