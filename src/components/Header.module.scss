@@ -1,0 +1,156 @@
+//顏色變數
+$color_white: #FEF9EF;
+$color_yellow: #FFF383;
+$color_black: #202020;
+$color_grey: #333;
+
+// 常用mixin
+@mixin ab_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin size($w,$h) {
+  width: $w;
+  height: $h;
+}
+
+//其他頁的navbar樣式
+nav {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  padding: 10px 0 20px 0;
+  background-color: $color_yellow;
+  z-index: 99;
+}
+.nav {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.5rem;
+}
+.navItem {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: -3px;
+  list-style: none;
+  transition: 0.5s;
+  .bi-house-fill {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  a {
+    // position: relative;
+    padding: 2px 10px;
+    color: $color_black;
+    font-weight: bold;
+    transition: 0.5s;
+    &:hover {
+      background-color: $color_grey;
+      color: $color_white;
+    }
+  }
+}
+.iLine {
+  border-right: solid 2px $color_black;
+}
+
+.active {
+  &::after {
+    position: absolute;
+    margin-top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    content: '';
+    @include size(7px, 7px);
+    border-radius: 50%;
+    background-color: $color_white;
+    box-shadow: 1px 1px 3px rgba($color_grey, 0.5);
+  }
+}
+
+//黃底大項目分類標頭
+header {
+  background-color: $color_yellow;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.titleBox {
+  @include ab_center;
+  letter-spacing: 3px;
+}
+.title,
+.subtitle {
+  font-weight: bold;
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.decoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_chicken_1,
+.header_eggs_1 {
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+.header_eggs_1 {
+  left: unset;
+  right: 30px;
+}
+.header_chicken_1 > svg {
+  transition: 0.5s;
+}
+
+
+//----RWD：電腦版-----
+
+@media screen and (min-width: 520px) {
+  //Nav
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav {
+    margin-right: 10px;
+    left: unset;
+    transform: unset;
+  }
+
+  //Header
+  .header_chicken_1 > svg {
+    width: 128px;
+    transition: 0.5s;
+  } 
+  .header_eggs_1 > svg {
+    width: 110px;
+    transition: 0.5s;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  //Header
+  .header_chicken_1 > svg {
+    width: 183px;
+    transition: 0.5s;
+  }
+  .header_eggs_1 > svg {
+    width: 171px;
+    transition: 0.5s;
+  }
+    
+}

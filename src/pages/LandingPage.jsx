@@ -1,17 +1,24 @@
+import { Link } from "react-router-dom";
 import { FooterDeco } from "../assets/images";
 import pageStyles from './Page.module.scss';
 
 function Navbar() {
   return (
-    <ul className={pageStyles.nav}>
-      <li className={`${pageStyles.navItem} ${pageStyles.iLine}`}>
-        <a className={pageStyles.navLink} href="#page_web">web design</a>
+    <ul className={pageStyles.nav_L}>
+      <li className={`${pageStyles.navItem_L} ${pageStyles.iLine}`}>
+        <Link to="/web_design">
+          web design
+        </Link>
       </li>
-      <li className={`${pageStyles.navItem} ${pageStyles.iLine}`}>
-        <a className={pageStyles.navLink} href="#page_product">product design</a>
+      <li className={`${pageStyles.navItem_L} ${pageStyles.iLine}`}>
+        <Link to="/product_design">
+          product design
+        </Link>
       </li>
-      <li className={pageStyles.navItem}>
-        <a className={pageStyles.navLink} href="#page_painting">paintings</a>
+      <li className={pageStyles.navItem_L}>
+        <Link to="/painting">
+          paintings
+        </Link>
       </li>
     </ul>
   );
