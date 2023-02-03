@@ -1,5 +1,7 @@
 //顏色變數
 $color_white: #FEF9EF;
+$color_yellow: #FFF383;
+$color_black: #202020;
 $color_grey: #333;
 
 // 常用mixin
@@ -27,4 +29,31 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   background-color: $color_white;
+}
+
+::-webkit-scrollbar {  /* make scrollbar transparent */
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border: 3px solid $color_white;
+  border-radius: 5px;
+  background-color: $color_yellow;
+}
+
+#section_cards {
+  margin-top: 100px;
+}
+
+footer {
+  padding-top: 50px;
+  .copyright {
+    font-size: 0.8rem;
+  }   
+}
+  
+@media screen and (min-width: 800px) {
+  #section_cards {
+    margin-top: 200px;
+  }
 }

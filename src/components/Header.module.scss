@@ -39,7 +39,7 @@ nav {
   transition: 0.5s;
   .bi-house-fill {
     margin-right: 5px;
-    cursor: pointer;
+    // cursor: pointer;
   }
   a {
     // position: relative;
@@ -131,6 +131,10 @@ header {
   }
 
   //Header
+  .title {
+    font-size: 2rem;
+  }
+    
   .header_chicken_1 > svg {
     width: 128px;
     transition: 0.5s;

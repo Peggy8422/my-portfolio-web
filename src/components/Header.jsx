@@ -42,15 +42,15 @@ export function NavbarMain() {
   );
 }
 
-function Header() {
+function Header({title, subtitle}) {
   return (
     <>
       <NavbarMain />
       <header id="header">
         <div className={headerStyles.container}>
           <div className={headerStyles.titleBox}>
-            <h2 className={headerStyles.title}>Web Design</h2>
-            <p className={headerStyles.subtitle}>UI/Front-end development</p>
+            <h2 className={headerStyles.title}>{title}</h2>
+            <p className={headerStyles.subtitle}>{subtitle}</p>
           </div>
           <div className={headerStyles.decoRow}>
             <div className={headerStyles.header_chicken_1}>

@@ -27,7 +27,7 @@ function Navbar() {
 function LandingPage() {
   return (
     <main>
-      <div className={pageStyles.container}>
+      <div className={pageStyles.container_L}>
         <div className={pageStyles.titleBox}>
           <h1 className={pageStyles.title}>PORTFOLIO</h1>
           <h6 className={pageStyles.subtitle}>___Peggy G.</h6>

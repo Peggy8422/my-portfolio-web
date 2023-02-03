@@ -23,9 +23,13 @@ main {
 
 .container {
   width: 80%;
-  height: 100vh;
   margin: 0 auto;
 }
+.container_L {
+  composes: container;
+  height: 100vh;
+}
+
 .titleBox {
   @include ab_center;
   top: 40%;
@@ -64,7 +68,7 @@ main {
     }
   }
 }
-
+//LandingPage的底部裝飾
 .footer_chicken_egg {
   width: 100%;
   position: absolute;
@@ -75,6 +79,17 @@ main {
     width: 100%;
   }
 }
+
+
+//"網頁建置中"提示文字
+.tempNoti {
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: $color_grey;
+}
+
 //----RWD：電腦版-----
 
 @media screen and (min-width:520px) {
@@ -97,3 +112,6 @@ main {
     width: 80%;
   }
 };
+
+
+//test: 暫放卡片的樣式
