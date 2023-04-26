@@ -9,7 +9,7 @@ function PaintingsPage() {
       <section>
         <p className={pageStyles.tempNoti}>網頁建置中...</p>
       </section>
-      <Footer year={"2023"} />
+      <Footer />
     </>
   );
 }

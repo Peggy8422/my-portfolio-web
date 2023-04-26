@@ -1,12 +1,12 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { HomeIcon, HeaderChickenOne, HeaderEggsOne } from "../assets/images";
+import { HomeIcon, HeaderChickenOne, HeaderEggsOne, HeaderChickenTwo } from "../assets/images";
 import headerStyles from "./Header.module.scss";
 
-export function NavbarMain() {
+export function NavbarMain({bg = 'yellow'}) {
   const navigate = useNavigate();
 
   return (
-    <nav id="navbar">
+    <nav id="navbar" className={`${headerStyles.navBox} ${(bg === 'white' && headerStyles.bg_white)}`}>
       <ul className={headerStyles.nav}>
         <li className={headerStyles.navItem}>
           <HomeIcon onClick={() => {
@@ -42,11 +42,37 @@ export function NavbarMain() {
   );
 }
 
+//Web分類Page 的 Header(米白底)
+export function CategoryHeader({title, subtitle}) {
+  return (
+    <>
+      <NavbarMain bg={'white'} />
+      <header id="category_header" className={headerStyles.cateHeader}>
+        <div className={headerStyles.container}>
+          <div className={headerStyles.titleBox_2}>
+            <h2 className={headerStyles.title}>{title}</h2>
+            <p className={headerStyles.subtitle}>{subtitle}</p>
+          </div>
+          <div className={headerStyles.decoRow_2}>
+            <div className={headerStyles.line}></div>
+            <div className={headerStyles.header_eggs_2}>
+              <HeaderEggsOne />
+            </div>
+            <div className={headerStyles.header_chicken_2}>
+              <HeaderChickenTwo />
+            </div>
+          </div>
+        </div>
+      </header>
+    </>
+  );
+}
+
 function Header({title, subtitle}) {
   return (
     <>
       <NavbarMain />
-      <header id="header">
+      <header id="header" className={headerStyles.commonHeader}>
         <div className={headerStyles.container}>
           <div className={headerStyles.titleBox}>
             <h2 className={headerStyles.title}>{title}</h2>

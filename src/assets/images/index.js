@@ -6,6 +6,7 @@ import { ReactComponent as CardDecoOne } from './card-deco-illus-1.svg';
 import { ReactComponent as CardDecoTwo } from './card-deco-illus-2.svg';
 import { ReactComponent as CardDecoThree } from './card-deco-illus-3.svg';
 import { ReactComponent as CardDecoFour } from './card-deco-illus-4.svg';
+import { ReactComponent as HeaderChickenTwo} from './header-chicken-2.svg';
 
 export {
   FooterDeco,
@@ -15,5 +16,6 @@ export {
   CardDecoOne,
   CardDecoTwo,
   CardDecoThree,
-  CardDecoFour
+  CardDecoFour,
+  HeaderChickenTwo
 };

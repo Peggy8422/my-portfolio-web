@@ -17,13 +17,16 @@ $color_grey: #333;
 }
 
 //其他頁的navbar樣式
-nav {
+.navBox {
   position: sticky;
   top: 0;
   width: 100vw;
   padding: 10px 0 20px 0;
   background-color: $color_yellow;
   z-index: 99;
+}
+.bg_white {
+  background-color: $color_white;
 }
 .nav {
   display: inline-block;
@@ -73,7 +76,7 @@ nav {
 }
 
 //黃底大項目分類標頭
-header {
+.commonHeader {
   background-color: $color_yellow;
 }
 .container {
@@ -87,7 +90,6 @@ header {
 .title,
 .subtitle {
   font-weight: bold;
-  text-align: center;
 }
 .subtitle {
   text-align: center;
@@ -115,6 +117,41 @@ header {
   transition: 0.5s;
 }
 
+//米白底小項目分類標頭
+.cateHeader {
+  background-color: $color_white;
+}
+.titleBox_2 {
+  position: absolute;
+  top: 40%;
+  letter-spacing: 3px;
+}
+.decoRow_2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .line {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 90%;
+    height: 1px;
+    background-color: $color_black;
+  }
+}
+.header_chicken_2, .header_eggs_2 {
+  position: relative;
+  top: 70px;
+  right: 10px;
+}
+.header_eggs_2 {
+  right: 15px;
+  transform: scaleX(-1);
+}
+.header_chicken_2 > svg {
+  transition: 0.5s;
+}
+  
 
 //----RWD：電腦版-----
 
@@ -144,6 +181,22 @@ header {
     transition: 0.5s;
   }
 
+  .deco_row {
+    .line {
+      bottom: 5px;
+    }
+  } 
+  .header_chicken_2, .header_eggs_2 {
+    top: 50px;
+  }
+  .header_chicken_2 > svg {
+    width: 100px;
+    transition: 0.5s;
+  } 
+  .header_eggs_2 > svg {
+    width: 90px;
+    transition: 0.5s;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -152,9 +205,18 @@ header {
     width: 183px;
     transition: 0.5s;
   }
-  .header_eggs_1 > svg {
+  .header_eggs_1 > svg, .header_eggs_2 > svg {
     width: 171px;
     transition: 0.5s;
   }
     
+  .deco_row {
+    .line {
+      bottom: -10px;
+    }
+  }
+  .header_chicken_2 > svg {
+    width: 168px;
+    transition: 0.5s;
+  }
 }

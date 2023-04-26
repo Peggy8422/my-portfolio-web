@@ -26,7 +26,7 @@ function WebSection() {
             <CardOne title={"小工具(DOM+API)"} />
           </div>
           <div className="col-11 col-md-8 col-lg-7">
-            <CardOne title={"React 基礎"}/>
+            <CardOne title={"React 專案"}/>
           </div>
           <div className="col-1 d-flex align-items-end">
             <div className={cardStyles.card_deco_illus_3}>
@@ -52,7 +52,7 @@ function WebDesignPage() {
     <>
       <Header title={"Web Design"} subtitle={"UI/Front-end development"} />
       <WebSection />
-      <Footer year={"2023"} />
+      <Footer />
     </>
   );
 }
