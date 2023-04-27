@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import pageStyles from "./Page.module.scss";
 import cardStyles from "../components/Cards.module.scss";
 import { CardDecoOne, CardDecoTwo, CardDecoThree, CardDecoFour } from "../assets/images";
 import { CardOne } from "../components/Cards";
+//卡片背景圖
+import ReactBg from "../assets/asking-board-d.jpg";
+import StaticSiteBg from "../assets/rainsave-d.jpg";
 
 function WebSection() {
   return (
@@ -12,7 +16,12 @@ function WebSection() {
         <div className="row gy-5">
           {/* 先寫四張卡片 */}
           <div className="col-11 col-md-8 col-lg-7">
-            <CardOne title={"UI/ RWD 切版"} />
+            <Link to={'/web_works?category=UI_RWD'}>
+              <CardOne 
+                title={"UI/ RWD 切版"} 
+                imgSrc={'https://picsum.photos/id/234/1000/500'}
+              />
+            </Link>
           </div>
           <div className="col-1 d-flex align-items-end">
             <div className={cardStyles.card_deco_illus_1}>
@@ -23,10 +32,20 @@ function WebSection() {
             <div className={cardStyles.card_deco_illus_2}>
               <CardDecoTwo />
             </div>
-            <CardOne title={"小工具(DOM+API)"} />
+            <Link to={'/web_works?category=DOM'}>
+              <CardOne 
+                title={"小工具(DOM+API)"} 
+                imgSrc={'https://picsum.photos/id/234/1000/500'}
+              />
+            </Link>
           </div>
           <div className="col-11 col-md-8 col-lg-7">
-            <CardOne title={"React 專案"}/>
+            <Link to={'/web_works?category=React'}>
+              <CardOne 
+                title={"React 專案"}
+                imgSrc={ReactBg}
+              />
+            </Link> 
           </div>
           <div className="col-1 d-flex align-items-end">
             <div className={cardStyles.card_deco_illus_3}>
@@ -39,7 +58,12 @@ function WebSection() {
             </div>
           </div>
           <div class="col-11 col-md-8 col-lg-7">
-            <CardOne title={"企業官網"} />
+            <Link to={'/web_works?category=StaticSite'}>
+              <CardOne 
+                title={"企業官網"} 
+                imgSrc={StaticSiteBg}
+              />
+            </Link>
           </div>
         </div>
       </div>

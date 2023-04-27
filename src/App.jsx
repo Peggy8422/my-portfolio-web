@@ -4,13 +4,14 @@ import WebDesignPage from './pages/WebDesignPage';
 import ProductDesignPage from './pages/ProductDesignPage';
 import PaintingsPage from './pages/PaintingsPage';
 import WebCategoryPage from './pages/WebCategoryPage';
-import './App.scss'
+import './App.scss';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
-
   return (
-    <div className="App">
+    <div className="App">     
       <BrowserRouter>
+        <ScrollToTop>
         <Routes>
           <Route path="*" element={<LandingPage />} />
           <Route path="/home" element={<LandingPage />} />
@@ -19,6 +20,7 @@ function App() {
           <Route path="/painting" element={<PaintingsPage />} />
           <Route path="/web_works" element={<WebCategoryPage />} />
         </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   )
