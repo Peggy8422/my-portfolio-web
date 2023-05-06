@@ -8,6 +8,7 @@ import { CardOne } from "../components/Cards";
 //卡片背景圖
 import ReactBg from "../assets/asking-board-d.jpg";
 import StaticSiteBg from "../assets/rainsave-d.jpg";
+import UiBg from "../assets/profile_ui.jpg";
 
 function WebSection() {
   return (
@@ -19,7 +20,7 @@ function WebSection() {
             <Link to={'/web_works?category=UI_RWD'}>
               <CardOne 
                 title={"UI/ RWD 切版"} 
-                imgSrc={'https://picsum.photos/id/234/1000/500'}
+                imgSrc={UiBg}
               />
             </Link>
           </div>

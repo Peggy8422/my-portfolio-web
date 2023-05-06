@@ -68,6 +68,7 @@ export function CategoryHeader({title, subtitle}) {
   );
 }
 
+// 黃底大分類標頭
 function Header({title, subtitle}) {
   return (
     <>

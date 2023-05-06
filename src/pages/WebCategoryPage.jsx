@@ -3,7 +3,6 @@ import { useSearchParams } from "react-router-dom";
 import { CategoryHeader } from "../components/Header";
 import Footer from "../components/Footer";
 import pageStyles from "./Page.module.scss";
-// import cardStyles from "../components/Cards.module.scss";
 import { CardTwo } from "../components/Cards";
 
 
@@ -13,16 +12,16 @@ function WebCateSection() {
       <div className={pageStyles.container}>
         <div class="row g-5">
           <div class="col-12 col-md-6">
-            <CardTwo title={"test1"} />
+            <CardTwo title={"Asking Board_線上家教問答平台"} imgSrc={"https://picsum.photos/id/236/1000/500"} />
           </div>
           <div class="col-12 col-md-6">
-            <CardTwo title={"test2"} />
+            <CardTwo title={"test2"} imgSrc={"https://picsum.photos/id/236/1000/500"} />
           </div>
           <div class="col-12 col-md-6">
-            <CardTwo title={"test3"} />
+            <CardTwo title={"test3"} imgSrc={"https://picsum.photos/id/236/1000/500"} />
           </div>
           <div class="col-12 col-md-6">
-            <CardTwo title={"test4"} />
+            <CardTwo title={"test4"} imgSrc={"https://picsum.photos/id/236/1000/500"} />
           </div>
         </div>
       </div>

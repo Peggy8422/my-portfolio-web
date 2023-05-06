@@ -12,14 +12,14 @@ export function CardOne({title, imgSrc}) {
 }
 
 //卡片2
-export function CardTwo({title}) {
+export function CardTwo({title, imgSrc}) {
   return (
     <>
       <div className={cardStyles.card_deco_illus}>
        <CardDecoTwo />
       </div>
       <div className={cardStyles.cardBox_2}>
-        <img className={cardStyles.webWork} src="https://picsum.photos/id/236/1000/500" alt=""/>
+        <img className={cardStyles.webWork} src={imgSrc} alt=""/>
         <h6 className={cardStyles.cardTitle_2}>{title}</h6>
       </div>
     </>

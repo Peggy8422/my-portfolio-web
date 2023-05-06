@@ -80,6 +80,37 @@ main {
   }
 }
 
+//各別作品頁面
+.section_mainPic {
+  margin-top: 100px;
+}
+.imgBox {
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 8px solid $color_yellow;
+  overflow: hidden;
+  cursor: pointer;
+  .mainPic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.readMore {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: $color_yellow;
+}
+.deco > svg {
+  display: inline-block;
+}
+.section_description {
+  background-color: $color_yellow;
+}
+
 
 //"網頁建置中"提示文字
 .tempNoti {

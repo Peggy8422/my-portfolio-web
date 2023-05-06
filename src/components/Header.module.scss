@@ -80,7 +80,7 @@ $color_grey: #333;
   background-color: $color_yellow;
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .titleBox {
@@ -117,13 +117,14 @@ $color_grey: #333;
   transition: 0.5s;
 }
 
-//米白底小項目分類標頭
+//米白底- 小項目分類標頭 | 各別作品的標頭
+// 小項目分類
 .cateHeader {
   background-color: $color_white;
 }
 .titleBox_2 {
   position: absolute;
-  top: 40%;
+  top: 30%;
   letter-spacing: 3px;
 }
 .decoRow_2 {
@@ -151,7 +152,32 @@ $color_grey: #333;
 .header_chicken_2 > svg {
   transition: 0.5s;
 }
-  
+// 各別作品
+.title_2,
+.subtitle_2 {
+  font-weight: bold;
+} 
+
+.title_2 {
+  width: 200%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color_black;
+  font-size: 1.2rem;
+}
+.subtitle_2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.decoRow_3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.reverse {
+  transform: scaleX(-1);
+}
+
 
 //----RWD：電腦版-----
 
@@ -181,11 +207,6 @@ $color_grey: #333;
     transition: 0.5s;
   }
 
-  .deco_row {
-    .line {
-      bottom: 5px;
-    }
-  } 
   .header_chicken_2, .header_eggs_2 {
     top: 50px;
   }
@@ -209,14 +230,12 @@ $color_grey: #333;
     width: 171px;
     transition: 0.5s;
   }
-    
-  .deco_row {
-    .line {
-      bottom: -10px;
-    }
-  }
+
   .header_chicken_2 > svg {
     width: 168px;
     transition: 0.5s;
+  }
+  .decoRow_3 {
+    align-items: end;
   }
 }

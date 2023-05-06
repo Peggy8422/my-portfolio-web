@@ -4,6 +4,7 @@ import WebDesignPage from './pages/WebDesignPage';
 import ProductDesignPage from './pages/ProductDesignPage';
 import PaintingsPage from './pages/PaintingsPage';
 import WebCategoryPage from './pages/WebCategoryPage';
+import SinglePrjPage from './pages/SinglePrjPage';
 import './App.scss';
 import ScrollToTop from './ScrollToTop';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/product_design" element={<ProductDesignPage />} />
           <Route path="/painting" element={<PaintingsPage />} />
           <Route path="/web_works" element={<WebCategoryPage />} />
+          <Route path="/work" element={<SinglePrjPage />} />
         </Routes>
         </ScrollToTop>
       </BrowserRouter>
