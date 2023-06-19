@@ -19,7 +19,7 @@ function App() {
           <Route path="/web_design" element={<WebDesignPage />} />
           <Route path="/product_design" element={<ProductDesignPage />} />
           <Route path="/painting" element={<PaintingsPage />} />
-          <Route path="/web_works" element={<WebCategoryPage />} />
+          <Route path="/web_design/web_works" element={<WebCategoryPage />} />
           <Route path="/work" element={<SinglePrjPage />} />
         </Routes>
         </ScrollToTop>

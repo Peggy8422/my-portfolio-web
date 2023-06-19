@@ -17,7 +17,7 @@ function WebSection() {
         <div className="row gy-5">
           {/* 先寫四張卡片 */}
           <div className="col-11 col-md-8 col-lg-7">
-            <Link to={'/web_works?category=UI_RWD'}>
+            <Link to={'/web_design/web_works?category=UI_RWD'}>
               <CardOne 
                 title={"UI/ RWD 切版"} 
                 imgSrc={UiBg}
@@ -33,7 +33,7 @@ function WebSection() {
             <div className={cardStyles.card_deco_illus_2}>
               <CardDecoTwo />
             </div>
-            <Link to={'/web_works?category=DOM'}>
+            <Link to={'/web_design/web_works?category=DOM'}>
               <CardOne 
                 title={"小工具(DOM+API)"} 
                 imgSrc={'https://picsum.photos/id/234/1000/500'}
@@ -41,7 +41,7 @@ function WebSection() {
             </Link>
           </div>
           <div className="col-11 col-md-8 col-lg-7">
-            <Link to={'/web_works?category=React'}>
+            <Link to={'/web_design/web_works?category=React'}>
               <CardOne 
                 title={"React 專案"}
                 imgSrc={ReactBg}
@@ -59,7 +59,7 @@ function WebSection() {
             </div>
           </div>
           <div class="col-11 col-md-8 col-lg-7">
-            <Link to={'/web_works?category=StaticSite'}>
+            <Link to={'/web_design/web_works?category=StaticSite'}>
               <CardOne 
                 title={"企業官網"} 
                 imgSrc={StaticSiteBg}
