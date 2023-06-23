@@ -8,6 +8,8 @@ import { ReactComponent as CardDecoThree } from './card-deco-illus-3.svg';
 import { ReactComponent as CardDecoFour } from './card-deco-illus-4.svg';
 import { ReactComponent as HeaderChickenTwo} from './header-chicken-2.svg';
 import { ReactComponent as ReadMoreDeco} from './readmore-deco.svg';
+import { ReactComponent as GithubIcon} from './github-icon.svg';
+import { ReactComponent as CodepenIcon} from './codepen-icon.svg';
 
 export {
   FooterDeco,
@@ -19,5 +21,7 @@ export {
   CardDecoThree,
   CardDecoFour,
   HeaderChickenTwo,
-  ReadMoreDeco
+  ReadMoreDeco,
+  GithubIcon,
+  CodepenIcon,
 };
