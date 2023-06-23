@@ -80,7 +80,21 @@ main {
   }
 }
 
-//各別作品頁面
+//各別作品頁面(SinglePrjPage)
+.relevantLinks {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  .relevant_link_btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $color_yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .section_mainPic {
   margin-top: 100px;
 }

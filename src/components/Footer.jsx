@@ -1,11 +1,11 @@
 
 function Footer() {
   return (
-    <footer class="mt-5" id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <p class="copyright">Copyright 2023 @Peggy G.</p>
+    <footer className="mt-5" id="copyright">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <p className="copyright">Copyright 2023 @Peggy G.</p>
           </div>
         </div>
       </div>
