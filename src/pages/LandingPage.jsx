@@ -5,7 +5,7 @@ import pageStyles from './Page.module.scss';
 function Navbar() {
   return (
     <ul className={pageStyles.nav_L}>
-      <li className={`${pageStyles.navItem_L} ${pageStyles.iLine}`}>
+      <li className={pageStyles.navItem_L}>
         <Link to="/web_design">
           web design
         </Link>
@@ -15,7 +15,7 @@ function Navbar() {
           product design
         </Link>
       </li>
-      <li className={pageStyles.navItem_L}>
+      <li className={`${pageStyles.navItem_L} ${pageStyles.iLine}`}>
         <Link to="/painting">
           paintings
         </Link>
